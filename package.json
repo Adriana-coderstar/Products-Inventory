@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Adriana-coderstar/Products-Inventory/issues"
   },
-  "homepage": "https://github.com/Adriana-coderstar/Products-Inventory#readme"
+  "homepage": "https://github.com/Adriana-coderstar/Products-Inventory#readme",
+  "devDependencies": {
+    "git-commit-msg-linter": "^4.1.3"
+  }
 }
