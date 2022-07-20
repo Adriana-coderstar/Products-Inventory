@@ -1,5 +1,4 @@
 {
-
   "compilerOptions": {
       "target": "ES6",
       "module":"commonjs",
@@ -11,5 +10,5 @@
       "strict": true,
       "skipLibCheck": true,
       "allowJs": true
-  }  
+  }
 }
