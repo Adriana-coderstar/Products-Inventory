@@ -7,19 +7,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model products {
-  id           Int      @id @default(autoincrement())
-  name_product String   @db.VarChar(255)
-  amount       Int
-  id_provider  Int
-  category     String   @db.VarChar(255)
-  provider     provider @relation(fields: [id_provider], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "products_FK")
+model Products {
+  id          Int       @id @default(autoincrement())
+  name        String    @db.VarChar(255)
+  quantity    Int
+  id_provider Int
+  category    String    @db.VarChar(255)
+  provider    Providers @relation(fields: [id_provider], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "products_FK")
 
   @@index([id_provider], map: "products_FK")
 }
 
-model provider {
+model Providers {
   id       Int        @id @default(autoincrement())
   company  String     @db.VarChar(255)
-  products products[]
+  products Products[]
 }
