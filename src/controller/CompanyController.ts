@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from 'express'
 
-class CompanyController {
+class Company {
   async create (req: Request, resp: Response, next: NextFunction) {}
   async findAll (req: Request, resp: Response, next: NextFunction) {}
   async findOne (req: Request, resp: Response, next: NextFunction) {}
@@ -8,4 +8,4 @@ class CompanyController {
   async delete (req: Request, resp: Response, next: NextFunction) {}
 }
 
-export default new CompanyController()
+export default new Company()
