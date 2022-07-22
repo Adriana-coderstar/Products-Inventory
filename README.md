@@ -28,6 +28,7 @@ O aplicativo compõe:
   </summary><br>
   
     - Arquivo encontra-se na base do projeto com nome env.exemplo
+     -  Atenção renomear o arquivo para .env
    
     - Necessario configurar o arquivo .env conforme arquivo de exemplo que encontra-se na raiz do projeto.
    
@@ -36,9 +37,6 @@ O aplicativo compõe:
     
       - para o banco de dados DATABASE_URL 
       - para teste DATABASE_URL_TEST
-    
-      - Exemplo para configurar a porta da aplicação:
-      - PORT=3001
     
 </details>
 
@@ -58,8 +56,27 @@ O aplicativo compõe:
   <summary>
     <strong>🛠 Testes - Comandos para testar aplicação</strong>
   </summary><br>
-    - npm test 
+     
+      Rodar as migrates do teste:
+   
+        - npx prisma generate --schema ./prisma/schema.test.prisma
+      
+        - npx prisma migrate dev --schema=./prisma/schema.test.prisma
+   
+      Rodar as migrates do teste:
+   
+        - npm test 
     
    - :warning: Observações:
-   - Testes encontra-se em desenvolvimento, até o momento foi feito alguns teste do banco de dados de Fornecedores referente a camada controller 
+    - Testes encontra-se em desenvolvimento, até o momento foi feito alguns teste do banco de dados de Fornecedores referente a camada controller 
+</details>
+
+<details>
+  <summary>
+    <strong>Comandos para rodar o banco de dados </strong>
+  </summary><br>
+
+  - No terminal digitar o seguinte comando:
+    - `npx prisma generate`
+    - `npx prisma migrate dev`
 </details>
