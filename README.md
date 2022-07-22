@@ -35,8 +35,8 @@ O aplicativo compõe:
     - Atenção ao configurar a conexão com banco, pois devido ao teste necessário configurar
     duas url base conforme exemplo que se encontra no arquivo env.exemplo
     
-      - para o banco de dados DATABASE_URL 
-      - para teste DATABASE_URL_TEST
+      - Para o banco de dados usar DATABASE_URL 
+      - Para teste usar DATABASE_URL_TEST
     
 </details>
 
