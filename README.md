@@ -73,7 +73,7 @@ O aplicativo compõe:
 
 <details>
   <summary>
-    <strong>Comandos para rodar o banco de dados </strong>
+    <strong>🏦Comandos para rodar o banco de dados </strong>
   </summary><br>
 
   - No terminal digitar o seguinte comando:
