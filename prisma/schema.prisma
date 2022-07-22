@@ -8,14 +8,14 @@ datasource db {
 }
 
 model Products {
-  id          Int       @id @default(autoincrement())
-  name        String    @db.VarChar(255)
-  quantity    Int
-  id_provider Int
-  category    String    @db.VarChar(255)
-  provider    Providers @relation(fields: [id_provider], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "products_FK")
+  id         Int       @id @default(autoincrement())
+  name       String    @db.VarChar(255)
+  quantity   Int
+  category   String    @db.VarChar(255)
+  idProvider Int
+  provider   Providers @relation(fields: [idProvider], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "products_FK")
 
-  @@index([id_provider], map: "products_FK")
+  @@index([idProvider], map: "products_FK")
 }
 
 model Providers {
