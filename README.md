@@ -63,7 +63,7 @@ O aplicativo compõe:
       
         - npx prisma migrate dev --schema=./prisma/schema.test.prisma
    
-      Rodar as migrates do teste:
+      Rodar o teste:
    
         - npm test 
     
